@@ -1,0 +1,98 @@
+{
+  "status": "RPS_V10_SUCCESS",
+  "timestamp_utc": "2026-08-01T13:45:10Z",
+  "total_solvers_tested": 5,
+  "passed_realizable": 2,
+  "blocked_violated": 3,
+  "false_positive": 0,
+  "false_negative": 0,
+  "certification_hash": "b2f35f5fac7e48182c502ec9e2dd103584246f3d8f347e8926ae8ef385366331",
+  "solvers": [
+    {
+      "name": "Clay_Ideal_Solver_P=NP",
+      "description": "Solveur parfait Clay : N=1e6 en 1 s, 0 erreur",
+      "profile": {
+        "T_calc_s": 1.0,
+        "E_total_J": 0.1,
+        "tau_coherence_s": 1.0,
+        "storage_bits": 1000000000.0,
+        "N_ops": 1000000000000000.0
+      },
+      "status": "VIOLATED",
+      "violations": [
+        "MARGOLUS_LEVITIN_VIOLATION",
+        "LANDAUER_LIMIT_VIOLATION",
+        "ZUREK_DECOHERENCE_VIOLATION"
+      ],
+      "expected_status": "VIOLATED",
+      "certificate_hash": "59f93837135d6d27439e25028de623a68e86e3afaa40dde34d3f9cd128dd5507"
+    },
+    {
+      "name": "Exponential_Exact_n=80",
+      "description": "Solveur exact exponentiel \u00e0 n=80",
+      "profile": {
+        "T_calc_s": 402000000000000.0,
+        "E_total_J": 2.6e+16,
+        "tau_coherence_s": 1e-06,
+        "storage_bits": 1000000000000.0,
+        "N_ops": 1.2e+24
+      },
+      "status": "VIOLATED",
+      "violations": [
+        "ENERGY_BUDGET_EXCEEDED"
+      ],
+      "expected_status": "VIOLATED",
+      "certificate_hash": "56dd860e2060b3492672f5935e52b772b5c0e5360a894f244b06e0e5f5f325b2"
+    },
+    {
+      "name": "Fake_Quantum_God",
+      "description": "QPU temp\u00e9rature ambiante infinie pr\u00e9tendue",
+      "profile": {
+        "T_calc_s": 1e-06,
+        "E_total_J": 10000000.0,
+        "tau_coherence_s": 1000.0,
+        "storage_bits": 1e+30,
+        "N_ops": 1000000000000.0
+      },
+      "status": "VIOLATED",
+      "violations": [
+        "BEKENSTEIN_STORAGE_VIOLATION",
+        "ZUREK_DECOHERENCE_VIOLATION",
+        "ENERGY_BUDGET_EXCEEDED"
+      ],
+      "expected_status": "VIOLATED",
+      "certificate_hash": "cab338fcbace2a852459d77cd2b7be677909f753edb9c7cf93dd2762a770bb99"
+    },
+    {
+      "name": "UPCF_V10_SOLVER",
+      "description": "Solveur UPCF V10 polynomial O(K\u00b3)",
+      "profile": {
+        "T_calc_s": 1.254,
+        "E_total_J": 81.51,
+        "tau_coherence_s": 1.2e-06,
+        "storage_bits": 19200000.0,
+        "N_ops": 125000000.0
+      },
+      "status": "PHYSICALLY_REALIZABLE",
+      "violations": [],
+      "expected_status": "PHYSICALLY_REALIZABLE",
+      "certificate_hash": "e6d571fedd04d131715bd4256199261ae5555972f2155f661ac15f0495659fd2"
+    },
+    {
+      "name": "UPCF_V10_n=640_approx",
+      "description": "Approximation UPCF V10 \u00e0 n=640",
+      "profile": {
+        "T_calc_s": 0.00021,
+        "E_total_J": 0.0138,
+        "tau_coherence_s": 1.2e-06,
+        "storage_bits": 5000000.0,
+        "N_ops": 640000.0
+      },
+      "status": "PHYSICALLY_REALIZABLE",
+      "violations": [],
+      "expected_status": "PHYSICALLY_REALIZABLE",
+      "certificate_hash": "6fed8f7a0c4013f277fc4e7708b5ed5113fbcbd90319f6b61d786f2273378742"
+    }
+  ],
+  "conclusion": "RPS est le successeur physique du test P vs NP \u2014 tout code qui ne passe pas RPS ne compile pas sur le N\u0153ud Souverain."
+}

@@ -91,7 +91,7 @@ The universal bouncer tests 5 canonical solver profiles and must correctly class
 
 ```bash
 # Clone the repository
-git clone https://github.com/evinajonathan13-max/RATISS-V10-Physical-Complexity-Audit.git
+git clone https://github.com/jonathansearch/RATISS-V10-Physical-Complexity-Audit.git
 cd RATISS-V10-Physical-Complexity-Audit
 
 # Install the single dependency
@@ -134,7 +134,7 @@ To cite this work in an academic publication:
   title={RATISS V10 AEON PRIME: A Physical Complexity Audit Framework for the P vs NP Problem},
   author={Evina, Jonathan and Johnking0},
   year={2025},
-  url={https://github.com/evinajonathan13-max/RATISS-V10-Physical-Complexity-Audit},
+  url={https://github.com/jonathansearch/RATISS-V10-Physical-Complexity-Audit},
   howpublished={\url{https://osf.io/6JZMB/}},
   doi={10.17605/OSF.IO/6JZMB}
 }
@@ -229,7 +229,7 @@ The universal bouncer tests 5 canonical solver profiles and must correctly class
 
 ```bash
 # Clone the repository
-git clone https://github.com/evinajonathan13-max/RATISS-V10-Physical-Complexity-Audit.git
+git clone https://github.com/jonathansearch/RATISS-V10-Physical-Complexity-Audit.git
 cd RATISS-V10-Physical-Complexity-Audit
 
 # Install the single dependency
@@ -272,7 +272,7 @@ To cite this work in an academic publication:
   title={RATISS V10 AEON PRIME: A Physical Complexity Audit Framework for the P vs NP Problem},
   author={Evina, Jonathan and Johnking0},
   year={2025},
-  url={https://github.com/evinajonathan13-max/RATISS-V10-Physical-Complexity-Audit},
+  url={https://github.com/jonathansearch/RATISS-V10-Physical-Complexity-Audit},
   howpublished={\url{https://osf.io/6JZMB/}},
   doi={10.17605/OSF.IO/6JZMB}
 }
